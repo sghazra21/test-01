@@ -1,7 +1,5 @@
 - hosts: all
-  vars:
-      - thishost: "{{ hostvars[inventory_hostname]['ansible_hostname'] }}"
   gather_facts: True
   become: true
   roles:
-   - ping 
+   - ping
