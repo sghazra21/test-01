@@ -1,6 +1,3 @@
--
-  name: test conectivity
-  hosts: all
-  tasks:
-    - name: ping test
-      ping:
+- name: Test reachability 
+  net_ping:
+    dest: {{ip_address}}
