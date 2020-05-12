@@ -1,0 +1,3 @@
+ name: Test reachability 
+  net_ping:
+    dest: {{ ip_address }}
