@@ -1,3 +1,6 @@
 - name: Test reachability 
-  ping:
-    dest: 137.135.112.208
+  shell: ping {{ ip_address }} -c 4  
+  register: ping_status 
+- set_fact: stat={{ping_status.stdout}}
+- debug: 
+    var: stat
