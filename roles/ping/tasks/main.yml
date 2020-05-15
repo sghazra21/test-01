@@ -1,3 +1,4 @@
+-
  name: test conectivity
  hosts: localhost
  tasks:
