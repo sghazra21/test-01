@@ -1,7 +1,4 @@
 -
  name: test conectivity
  hosts: localhost
- tasks:
-    - name: ping test
-      ping:
-
+ ping:
