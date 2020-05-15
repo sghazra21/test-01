@@ -1,6 +1,6 @@
-- name: Test reachability 
-  shell: ping {{ ip_address }} -c 4  
-  register: ping_status 
-- set_fact: stat={{ping_status.stdout}}
-- debug: 
-    var: stat
+ name: test conectivity
+  hosts: all
+  tasks:
+    - name: ping test
+      ping:
+
