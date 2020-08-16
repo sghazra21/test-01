@@ -1,6 +1,6 @@
 - name: Copy file with owner and permissions
   copy:
-    src: win_key.pem
+    src: /home/centos/awx-key1.pem
     dest: /tmp/awx-key1.pem
     owner: root
     group: root
