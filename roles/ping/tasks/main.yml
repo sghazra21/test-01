@@ -1,6 +1,6 @@
 - name: Get windows password  
   ec2_win_password:
-    instance_id: i-07b703f2943c1067d
+    instance_id: i-0778d60757425b85f
     aws_access_key: AKIAIHRFANUXORBWJOBA
     aws_secret_key: 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
     #security_token: "{{ ec2_token }}"
