@@ -11,4 +11,4 @@
 #- set_fact: 
   #  win_pass: "{{ pass.stdout }}"
   
-- debug : msg="{{ ec2_pass }}"
+- debug : msg="{{ ec2_pass.stdout }}"
