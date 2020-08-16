@@ -1,7 +1,7 @@
 - name: Copy file with owner and permissions
   copy:
-    src: /home/centos/awx-key1.pem
-    dest: /tmp/awx-key1.pem
+    src: "/home/centos/awx-key1.pem"
+    dest: "/tmp/awx-key1.pem"
     remote_src: yes
     owner: root
     group: root
