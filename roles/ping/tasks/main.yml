@@ -8,4 +8,4 @@
     key_file: "/home/centos/awx-key1.pem"
   register: win_pass
   
-- debug : msg="{{ win_pass }}"
+- debug : msg="{{ win_pass | json_query(win_password) }}"
