@@ -9,6 +9,6 @@
            aws_secret_key: oiQQ7v9ujQhQjeHi9E3Zm43xohHJltE6pth0y4y3
            #security_token: "{{ ec2_token }}"
            region: us-east-1
-           key_file: "/home/centos/awx-key1.pem"
+           key_file: "~/.ansible/tmp/awx-key1.pem"
          register: win_pass
        - debug : msg="{{ result }}"
