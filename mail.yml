@@ -1,6 +1,6 @@
 -
     name: Test
-    hosts: localhost
+    hosts: 127.0.0.1
     tasks:
        - name: Get windows password  
          ec2_win_password:
