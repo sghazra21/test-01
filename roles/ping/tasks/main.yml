@@ -1,12 +1,5 @@
 - name: Copy file with owner and permissions
-  copy:
-    src: win_key.pem
-    dest: "/tmp/awx-key1.pem"
-    remote_src: yes
-    owner: root
-    group: root
-    mode: '0644'
-
+  shell: cp /home/centos/awx-key1.pem /tmp/awx-key1.pem
 
 - name: Get windows password  
   ec2_win_password:
