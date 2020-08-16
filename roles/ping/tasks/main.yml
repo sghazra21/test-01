@@ -1,4 +1,5 @@
 - name: Copy file with owner and permissions
+  become: yes
   copy:
     src: /home/centos/awx-key1.pem
     dest: /root/awx-key1.pem
