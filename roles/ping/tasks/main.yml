@@ -9,6 +9,6 @@
   register: pass
 
 - set_fact: 
-    win_pass: "{{ pass.results }}"
+    win_pass: "{{ pass.stdout}}"
   
 - debug : msg="{{ win_pass }}"
