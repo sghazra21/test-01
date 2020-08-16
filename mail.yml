@@ -1,17 +1,15 @@
 -
-    name: 'Update nameserver entry into resolv.conf file on localhost'
+    name: Test
     hosts: localhost
-    vars:
-        car_model: BMW M3
-        country_name: USA
-        title: Systems Engineer
     tasks:
-        -
-            name: 'Print my car model'
-            command: 'echo "My car''s model is {{car_model}}"'
-        -
-            name: 'Print my country'
-            command: 'echo "I live in the {{country_name}}"'
-        -
-            name: 'Print my title'
-            command: 'echo "I work as a {{title}}"'
+          - name: Get windows password  
+            ec2_win_password:
+                instance_id: i-07b703f2943c1067d
+                aws_access_key: "{{ec2_access_key}}"
+                aws_secret_key: "{{ec2_secret_key}}"
+                security_token: "{{ ec2_token }}"
+                region: us-east-1
+            key_file: "~/aws/keypair/awx-key1.pem"
+            register: win_pass
+  
+          - debug : msg="{{ result }}"
