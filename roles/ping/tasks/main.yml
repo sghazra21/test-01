@@ -11,4 +11,4 @@
 #- set_fact: 
   #  win_pass: "{{ pass.stdout }}"
   
-- debug : msg="{{ pass.stdout }}"
+- debug : msg="{{ pass }}"
