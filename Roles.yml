@@ -1,5 +1,7 @@
 - hosts: all
   gather_facts: True
   become: true
+  sudo: yes
+  sudo_user: root
   roles:
    - ping
