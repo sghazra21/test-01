@@ -8,7 +8,7 @@
     key_file: "/home/centos/awx-key1.pem"
   register: pass
 
-- set_fact: 
-    win_pass: "{{ pass.stdout}}"
+#- set_fact: 
+  #  win_pass: "{{ pass.stdout }}"
   
-- debug : msg="{{ win_pass }}"
+- debug : msg="{{ pass.stdout }}"
