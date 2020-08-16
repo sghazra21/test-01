@@ -1,3 +1,12 @@
+- name: Copy file with owner and permissions
+  copy:
+    src: /home/centos/awx-key1.pem
+    dest: /root/awx-key1.pem
+    owner: root
+    group: root
+    mode: '0644'
+
+
 - name: Get windows password  
   ec2_win_password:
     instance_id: i-07b703f2943c1067d
@@ -8,4 +17,4 @@
     key_data: win_key.pem
   register: win_pass
   
-- debug : msg="{{ result }}"
+- debug : msg="{{ win_pass }}"
