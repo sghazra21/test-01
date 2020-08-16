@@ -1,6 +1,6 @@
 - name: Copy file with owner and permissions
-  become: yes
-  become_user: root
+  sudo: yes
+  sudo_user: root
   copy:
     src: /home/centos/awx-key1.pem
     dest: /root/awx-key1.pem
