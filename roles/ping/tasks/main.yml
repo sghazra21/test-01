@@ -1,6 +1,3 @@
-- name: Copy file with owner and permissions
-  shell: cp /home/centos/awx-key1.pem /tmp/awx-key1.pem
-
 - name: Get windows password  
   ec2_win_password:
     instance_id: i-07b703f2943c1067d
