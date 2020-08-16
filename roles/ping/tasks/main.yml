@@ -6,9 +6,9 @@
     #security_token: IQoJb3JpZ2luX2VjEP3//////////wEaCXVzLWVhc3QtMSJFMEMCICudldEwuw1B6F6b4PkeWkhYWFUEUcVIO4OF5/eqdKxIAh84+KuKiBCSFJ/GS4F85a85MVwalRprhpKHD3dNwkI0KvcBCNb//////////wEQABoMMzc5NzA3NDcxNDIxIgyVZc4kcBNYAlCoeukqywFr1DHSCbfuIFsiHOlwrKP957pzAEXWxjzCVv5CjKjH9oK3M0fB5De4DNiGDu2uvpZuNrMUZNCHlXhTsS1CATyhPNqB5vZlCkePaDB2ugPbAQFo2HQs673DmLG1rD/2BDfKosWE2mQDZofnaD7ikcizoAqDLFN2lvhYyrvQQEzl5Fng1Ox8lbSuE4E0DpdpMozLvHluwoYIn9wkQGmlbhSjsoOgPKHT0IWYQadxpmPqh6/7xXTgW1iiibbbPdllYnMQ+U0TBcuT2QoM1jCN2eT5BTqaAVHBRuH4ki6vcjeZHEQ3eHD/sJwFjNG0kRU9CMTX6ppRUHiqra2SFsyfQVmlpilEwkrCa019OdYedFayqKIJME0HuIDCNg8vzrQ8NrawD6HYvDZCFEKw0Vm4qfUkTHMY3TlvnlSaGl1LRDQ0Ju7fLY2nBJG/UHhcJ2VRGLeGZ1xNUsD4bO5VJdbfZgAv7mQnD07bUSSUw0gLX68=
     region: us-east-1
     key_file: "/home/centos/awx-key1.pem"
-  register: pass
+  register: ec2_pass
 
 #- set_fact: 
   #  win_pass: "{{ pass.stdout }}"
   
-- debug : msg="{{ pass }}"
+- debug : msg="{{ ec2_pass }}"
