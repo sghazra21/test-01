@@ -9,7 +9,7 @@
   register: ec2_pass
   
 - set_fact: 
-    win_pass: "{{ec2_pass.win_password}}"
+    win_pass: "{{ec2_pass.stdout_line[1]}}"
   
 - debug: 
     msg: Password is {{win_pass}}
