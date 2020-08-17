@@ -1,6 +1,6 @@
 - name: Get windows password  
   ec2_win_password:
-    instance_id: i-0e75b70a69ca1b3d6
+    instance_id: i-0778d60757425b85f
     aws_access_key: AKIAIHRFANUXORBWJOBA
     aws_secret_key: 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
     #security_token: IQoJb3JpZ2luX2VjEP3//////////wEaCXVzLWVhc3QtMSJFMEMCICudldEwuw1B6F6b4PkeWkhYWFUEUcVIO4OF5/eqdKxIAh84+KuKiBCSFJ/GS4F85a85MVwalRprhpKHD3dNwkI0KvcBCNb//////////wEQABoMMzc5NzA3NDcxNDIxIgyVZc4kcBNYAlCoeukqywFr1DHSCbfuIFsiHOlwrKP957pzAEXWxjzCVv5CjKjH9oK3M0fB5De4DNiGDu2uvpZuNrMUZNCHlXhTsS1CATyhPNqB5vZlCkePaDB2ugPbAQFo2HQs673DmLG1rD/2BDfKosWE2mQDZofnaD7ikcizoAqDLFN2lvhYyrvQQEzl5Fng1Ox8lbSuE4E0DpdpMozLvHluwoYIn9wkQGmlbhSjsoOgPKHT0IWYQadxpmPqh6/7xXTgW1iiibbbPdllYnMQ+U0TBcuT2QoM1jCN2eT5BTqaAVHBRuH4ki6vcjeZHEQ3eHD/sJwFjNG0kRU9CMTX6ppRUHiqra2SFsyfQVmlpilEwkrCa019OdYedFayqKIJME0HuIDCNg8vzrQ8NrawD6HYvDZCFEKw0Vm4qfUkTHMY3TlvnlSaGl1LRDQ0Ju7fLY2nBJG/UHhcJ2VRGLeGZ1xNUsD4bO5VJdbfZgAv7mQnD07bUSSUw0gLX68=
