@@ -8,8 +8,9 @@
     key_file: "/home/centos/awx-key1.pem"
   register: ec2_pass
   
-- set_fact: 
-    win_pass: "{{ec2_pass.stdout_lines[1]}}"
+#- set_fact: 
+   # win_pass: "{{ec2_pass.stdout_lines[1]}}"
   
 - debug: 
-    msg: Password is {{win_pass}}
+    msg: Password is "{{item.stdout_line[0]}}"
+  with_items: "{{ec2_pass.results}}"
