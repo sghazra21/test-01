@@ -13,6 +13,7 @@
   
 # - debug: 
     # msg: "Password is {{ec2_pass.win_password}}"
-    
-- debug: var= hostvars[inventory_hostname]['ansible_hostname']
+- set_fact:
+    host: var= hostvars[inventory_hostname]['ansible_hostname']
+- debug: host
   
