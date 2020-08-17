@@ -13,3 +13,4 @@
   
 - debug: 
     var: win_pass
+    msg: "Password is {{win_pass}}"
