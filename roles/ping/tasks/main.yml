@@ -7,8 +7,6 @@
     region: us-east-1
     key_file: "/home/centos/awx-key1.pem"
   register: ec2_pass
-
-- set_fact: 
-    win_pass: "{{ pass.stdout }}"
   
-- debug : msg="{{ win_pass }}"
+- debug :
+    var: ec2_pass.win_password
