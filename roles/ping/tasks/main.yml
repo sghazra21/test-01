@@ -14,5 +14,5 @@
 # - debug: 
     # msg: "Password is {{ec2_pass.win_password}}"
     
-- debug: var=inventory_hostname
+- debug: var= hostvars['PostTask_Windows']
   
