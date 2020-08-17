@@ -12,4 +12,4 @@
    # win_pass: "{{ec2_pass.stdout_lines[1]}}"
   
 - debug: 
-    msg: "Password is {{ec2_pass.stdout}}"
+    msg: "Password is {{ec2_pass.win_password}}"
