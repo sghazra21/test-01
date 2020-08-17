@@ -14,5 +14,5 @@
 - debug: 
     msg: "Password is {{ec2_pass.win_password}}"
     
-- debug: var=ansible_facts
+- debug: var=inventory_hostname
   
