@@ -17,7 +17,7 @@
   - name: Set IP to enable winrm on newly launched instance
     set_stats:
       data:
-        remote_ip: 172.31.82.182
-        remote_pass: =R-fyWyiz)GzJln)facSq3B9UaVSai5-
+        remote_ip: 172.31.53.81
+        remote_pass: wz-nR-YdoAVD?x=)n2B4u%S%U?LOPs9t
         
   
