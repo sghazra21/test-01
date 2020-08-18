@@ -13,7 +13,11 @@
   
 # - debug: 
     # msg: "Password is {{ec2_pass.win_password}}"
-- set_fact:
-    host: var= hostvars[inventory_hostname]['ansible_hostname']
-- debug: host
+    
+  - name: Set fact for subsequent job templates
+    set_stats:
+      data:
+        remote_ip: 172.31.82.182
+        remote_pass: something
+        
   
